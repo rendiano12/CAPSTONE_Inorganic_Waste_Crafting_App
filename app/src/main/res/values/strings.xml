@@ -7,4 +7,6 @@
     <string name="favorite">Favorite</string>
     <string name="btn_result_scanning">Object</string>
     <string name="item_result">Item Result</string>
+    <string name="tutorial_text1">1. Buka halaman scan pada tombol scan di halaman home.\n2. Arahkan kamera pada objek, maka akan muncul tombol berupa kategori objek yang anda scan.</string>
+    <string name="tutorial_text2">3. Kemudian tekan tombol tersebut, maka akan muncul list-list item daur ulang sesuai dengan objek yang anda scan.</string>
 </resources>

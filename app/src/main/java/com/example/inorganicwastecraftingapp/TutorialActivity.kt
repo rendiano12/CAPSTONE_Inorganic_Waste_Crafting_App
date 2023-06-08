@@ -14,5 +14,6 @@ class TutorialActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.title = getString(R.string.tutorial)
+        binding.ivTutorial1.setImageResource(R.drawable.tutorial_image1)
     }
 }

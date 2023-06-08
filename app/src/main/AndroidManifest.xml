@@ -23,7 +23,8 @@
             android:exported="false" />
         <activity
             android:name=".CameraScanActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="fullSensor"/>
         <activity
             android:name=".TutorialActivity"
             android:exported="false" />
