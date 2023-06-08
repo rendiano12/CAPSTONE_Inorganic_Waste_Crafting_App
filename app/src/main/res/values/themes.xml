@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.InorganicWasteCraftingApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/green_04</item>
+        <item name="colorOnPrimary">@color/green_01</item>
+        <item name="android:textColorPrimary">@color/green_01</item>
+        <item name="android:textColorSecondary">@color/green_01</item>
+        <item name="titleTextColor">@color/green_04</item>
+    </style>
+
+    <style name="Theme.InorganicWasteCraftingApp" parent="Base.Theme.InorganicWasteCraftingApp" />
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Inorganic Waste Crafting App</string>
+    <string name="home">Home</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="scan_any_stuffs">Scan your any inorganic\nstuffs :)</string>
+    <string name="scan">Scan</string>
+    <string name="favorite">Favorite</string>
+    <string name="btn_result_scanning">Object</string>
+    <string name="item_result">Item Result</string>
+</resources>

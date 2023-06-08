@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_01"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/top_bar_tutorial"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/option_menu"
+            app:title="@string/home" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_home_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="96dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="MissingConstraints"
+        tools:src="@drawable/app_icon" />
+
+    <TextView
+        android:id="@+id/tv_home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="259dp"
+        android:textAlignment="center"
+        android:text="@string/scan_any_stuffs" />
+
+    <Button
+        android:id="@+id/btn_main_scan"
+        android:layout_width="298dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="382dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_baseline_fullscreen_24"
+        android:drawablePadding="0dp"
+        android:backgroundTint="@color/green_03"
+        android:textColor="@color/green_01"
+        android:textSize="18sp"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:text="@string/scan" />
+
+    <Button
+        android:id="@+id/btn_main_favorite"
+        android:layout_width="298dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="452dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_baseline_bookmark_outline_24"
+        android:backgroundTint="@color/green_03"
+        android:textColor="@color/green_01"
+        android:textSize="18sp"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:text="@string/favorite" />
+
+</RelativeLayout>
