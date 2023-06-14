@@ -1,54 +1,43 @@
 package com.example.inorganicwastecraftingapp.response
 
+import androidx.room.Entity
 import com.google.gson.annotations.SerializedName
 
 data class RecycledItemsResponse(
 
-	@field:SerializedName("total")
-	val total: Int,
-
-	@field:SerializedName("limit")
-	val limit: Int,
-
-	@field:SerializedName("skip")
-	val skip: Int,
-
-	@field:SerializedName("products")
-	val products: List<ProductsItem>
+	@field:SerializedName("RecycledItemsResponse")
+	val recycledItemsResponse: List<RecycledItemsResponseItem>
 )
 
-data class ProductsItem(
+data class LinkItem(
 
-	@field:SerializedName("discountPercentage")
-	val discountPercentage: Any,
+	@field:SerializedName("langkah")
+	val langkah: List<String>,
 
-	@field:SerializedName("thumbnail")
-	val thumbnail: String,
+	@field:SerializedName("bahan")
+	val bahan: List<String>,
 
-	@field:SerializedName("images")
-	val images: List<String>,
+	@field:SerializedName("link")
+	val link: String,
 
-	@field:SerializedName("price")
-	val price: Int,
+	@field:SerializedName("judul")
+	val judul: String,
 
-	@field:SerializedName("rating")
-	val rating: Any,
+	@field:SerializedName("langkah_langkah")
+	val langkahLangkah: List<String>
+)
 
-	@field:SerializedName("description")
-	val description: String,
+data class RecycledItemsResponseItem(
+
+	@field:SerializedName("kelas")
+	val kelas: String,
+
+	@field:SerializedName("jenis")
+	val jenis: String,
+
+	@field:SerializedName("link")
+	val link: List<LinkItem>,
 
 	@field:SerializedName("id")
-	val id: Int,
-
-	@field:SerializedName("title")
-	val title: String,
-
-	@field:SerializedName("stock")
-	val stock: Int,
-
-	@field:SerializedName("category")
-	val category: String,
-
-	@field:SerializedName("brand")
-	val brand: String
+	val id: String
 )

@@ -5,8 +5,18 @@
     <string name="scan_any_stuffs">Scan your any inorganic\nstuffs :)</string>
     <string name="scan">Scan</string>
     <string name="favorite">Favorite</string>
+    <string name="favorite_info">Anda belum menambahkan barang favorit</string>
+    <string name="foto_item">Foto Item</string>
     <string name="btn_result_scanning">Object</string>
-    <string name="item_result">Item Result</string>
-    <string name="tutorial_text1">1. Buka halaman scan pada tombol scan di halaman home.\n2. Arahkan kamera pada objek, maka akan muncul tombol berupa kategori objek yang anda scan.</string>
+    <string name="item_result">Hasil Benda:</string>
+    <string name="tutorial_text1">1. Buka halaman scan pada tombol scan di halaman home.\n2. Arahkan kamera pada objek, maka akan muncul tombol berupa kategori objek yang anda scan. Beberapa jenis benda yang bisa di deteksi adalah:\n- Kaleng\n- Cangkir/Cup\n- Botol Kaca\n- Kantong Plastik\n- Botol Plastik\n- Tutup Botol Plastik\n- Plastik Kemasan\n- Sendok Plastik\n- Sterofoam\n- Sedotan</string>
     <string name="tutorial_text2">3. Kemudian tekan tombol tersebut, maka akan muncul list-list item daur ulang sesuai dengan objek yang anda scan.</string>
+    <string name="tutorial_text3">Team Capstone: C23-PR564\nMember:\n1. (ML) M181DSX0136 – Glene Felix\n2. (ML) M210DSY1528 – Zalfaa Sherydian Sugiono\n3. (ML)  M210DSY3119 – Serly Maulita Ardiyanti\n4. (CC) C038DSX2253 – Moch Rafy Adhipramana Effendy\n5. (CC) C253DSX3329 – Didik Adi Darmawan\n6. (MD) A253DKX4472 – Rendiano Pramuditya Ardhi</string>
+    <string name="tutorial_about_title">About</string>
+    <string name="card_item_name">Nama Item</string>
+    <string name="detail_item_judul">Judul Item</string>
+    <string name="detail_item_link">Link Item</string>
+    <string name="detail_item_bahan">Bahan Item</string>
+    <string name="detail_item_langkah">Langkah Item</string>
+    <string name="jenis_item">Jenis Benda</string>
 </resources>

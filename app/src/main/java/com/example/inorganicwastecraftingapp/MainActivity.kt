@@ -31,5 +31,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CameraScanActivity::class.java)
             startActivity(intent)
         }
+        binding.btnMainFavorite.setOnClickListener{
+            val intent = Intent(this, FavoriteActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

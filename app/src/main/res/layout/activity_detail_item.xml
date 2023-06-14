@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_01"
+    tools:context=".DetailItemActivity">
+
+    <TextView
+        android:id="@+id/tv_detail_item_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/detail_item_judul"
+        android:textAlignment="center"
+        android:textColor="@color/green_04"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_detail_item_gambar"
+        android:layout_width="220dp"
+        android:layout_height="145dp"
+        android:layout_below="@id/tv_detail_item_judul"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/foto_item"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/btn_detail_item_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_detail_item_gambar"
+        android:layout_margin="10dp"
+        android:outlineSpotShadowColor="@color/green_01"
+        android:backgroundTint="@color/green_01"
+        android:text="@string/detail_item_link"
+        android:textAllCaps="false"
+        android:textColor="@color/green_04"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_detail_add_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_detail_item_link"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="@color/green_02"
+        android:contentDescription="@string/favorite"
+        android:outlineSpotShadowColor="@color/green_01"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_baseline_bookmark_outline_green01_24"
+        tools:targetApi="p" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/green_04"
+        android:layout_below="@id/btn_detail_item_link"
+        tools:ignore="ScrollViewCount">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_detail_item_bahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/detail_item_bahan"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_detail_item_langkah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_detail_item_bahan"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/detail_item_langkah"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_detail_item"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+</RelativeLayout>

@@ -7,49 +7,84 @@
     android:background="@color/green_01"
     tools:context=".TutorialActivity">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@color/green_03">
 
-        <TextView
-            android:id="@+id/tv_tutorial1"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="15dp"
-            android:lineSpacingExtra="4dp"
-            android:text="@string/tutorial_text1"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/iv_tutorial1"
-            android:layout_width="140dp"
-            android:layout_height="160dp"
-            android:layout_below="@+id/tv_tutorial1"
-            tools:src="@drawable/tutorial_image1" />
+            <TextView
+                android:id="@+id/tv_tutorial1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/tutorial_text1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/tv_tutorial2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="15dp"
-            android:layout_below="@+id/iv_tutorial1"
-            android:lineSpacingExtra="4dp"
-            android:text="@string/tutorial_text2"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
+            <ImageView
+                android:id="@+id/iv_tutorial1"
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:layout_below="@+id/tv_tutorial1"
+                tools:src="@drawable/tutorial_image1" />
 
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_tutorial2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_tutorial1"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/tutorial_text2"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_tutorial_about_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tutorial2"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="15dp"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/tutorial_about_title"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/tv_tutorial3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tutorial_about_title"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/tutorial_text3"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
